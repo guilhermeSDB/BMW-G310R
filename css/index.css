@@ -1,3 +1,39 @@
+@-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +50,8 @@ body .container {
   padding: 20px 10%;
   transition: background-image 0.3s;
   transition: background-position 0.5s;
+  -webkit-animation: scale-up-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @media screen and (max-width: 768px) {
   body .container {
@@ -64,6 +102,8 @@ body .container .content h1 {
   font-size: 100px;
   color: #222;
   margin-top: -25px;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 @media screen and (max-width: 425px) {
   body .container .content h1 {
@@ -113,6 +153,7 @@ body .container .content .colour-select #black {
 }
 @media screen and (max-width: 425px) {
   body #arrow {
+    display: block !important;
     width: 50px;
     position: absolute;
     right: 36px;
