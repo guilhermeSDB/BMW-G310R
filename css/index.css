@@ -153,12 +153,17 @@ body .container .content .colour-select #black {
 }
 @media screen and (max-width: 425px) {
   body #arrow {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     position: absolute;
     right: 36px;
-    bottom: 10rem;
+    bottom: 3rem;
     transition: 0.5s;
+    background: #6c6c6c;
+    border-radius: 50%;
+    border: 12px solid #6a6a6a;
   }
   body #arrow.ativo {
     right: 335px;

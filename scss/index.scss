@@ -97,7 +97,7 @@ body{
             .colour-select{
                 display: flex;
                 margin-top: 30px;
-
+                
                 div{
                     background-color: #333;
                     width: 50px;
@@ -124,12 +124,17 @@ body{
     
     @media screen and (max-width: 425px) { 
         #arrow{
-            display: block!important;
+            display: flex!important;
+            justify-content: center;
+            align-items: center;
             width: 50px;
             position: absolute;
             right: 36px;
-            bottom: 10rem;
+            bottom: 3rem;
             transition: 0.5s;
+            background: #6c6c6c;
+            border-radius: 50%;
+            border: 12px solid #6a6a6a;
 
             &.ativo{
                 right: 335px;

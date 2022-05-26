@@ -6,15 +6,15 @@ let arrowBtn = document.getElementById("arrow")
 let content = document.getElementById("main-content")
 
 redBtn.onclick = function(){
-    bike.style.backgroundImage = "url(../src/BMW1.png)"
+    bike.style.backgroundImage = "url(src/BMW1.png)"
 }
 
 blueBtn.onclick = function(){
-    bike.style.backgroundImage = "url(../src/BMW2.png)"
+    bike.style.backgroundImage = "url(src/BMW2.png)"
 }
 
 blackBtn.onclick = function(){
-    bike.style.backgroundImage = "url(../src/BMW3.png)"
+    bike.style.backgroundImage = "url(src/BMW3.png)"
 }
 
 arrowBtn.onclick = function(){
