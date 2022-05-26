@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../src/BMW1.png);
+        background-size: cover;
+        background-position: center;
+        padding: 20px 10%;   
+        transition: background-image 0.3s;    
+        transition: background-position 0.5s;   
+
+        @media screen and (max-width: 768px) { background-position: center left;} 
+
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo{
+                width: 160px;
+                cursor: pointer;
+            }
+
+            .btn{
+                text-decoration: none;
+                color: #fff;
+                background: #333;
+                padding: 14px 50px;
+                border: 3px solid #333;
+                border-radius: 30px;
+                transition: 0.3s;
+
+                &:hover{
+                    border: 3px solid #333;
+                    background: transparent;
+                    color: #333;
+                }
+
+                @media screen and (max-width: 425px) { padding: 10px 12px; font-size: .7rem;}
+
+                @media screen and (max-width: 768px) { padding: 10px 20px; font-size: 1rem;}
+            }
+        }
+
+        .content{
+            margin-top: 10%;
+            transition: 0.3s;
+
+            h1{
+                font-size: 100px;
+                color: #222;
+                margin-top: -25px;
+
+                @media screen and (max-width: 425px) { font-size: 70px;}
+
+                @media screen and (max-width: 768px) { font-size: 80px;}
+            }
+
+            h2{
+                color: red;
+                font-size: 34px;
+            }
+
+            h3{
+                margin-top: 30px;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+            p{
+                max-width: 380px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #555;
+            }
+
+            .colour-select{
+                display: flex;
+                margin-top: 30px;
+
+                div{
+                    background-color: #333;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                #red{
+                    background: red;
+                }
+
+                #blue{
+                    background: blue;
+                }
+
+                #black{
+                    background: #000;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 425px) { 
+        #arrow{
+            width: 50px;
+            position: absolute;
+            right: 36px;
+            bottom: 10rem;
+            transition: 0.5s;
+
+            &.ativo{
+                right: 335px;
+                transform:rotate(180deg);
+            }
+        }
+    }
+
+    
+}
